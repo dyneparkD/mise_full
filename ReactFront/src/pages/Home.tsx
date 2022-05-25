@@ -72,7 +72,7 @@ const Home = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`http://localhost:3001/mise/${station}`)
+      .get(`http://localhost/api/mise/${station}`)
       .then((res) => {
         setData(res.data[0]);
         setIsLoading(false);
